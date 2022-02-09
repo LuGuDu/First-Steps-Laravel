@@ -18,3 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('/helloWorld', 'HelloWorldController@index');
+
+
+Route::get('/login', function() {
+    return view('login');
+});
+
+Route::post('/login', 'LoginController@index');
